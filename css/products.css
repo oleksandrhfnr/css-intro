@@ -4,10 +4,26 @@
 
 .main-products .product-card__image {
     width: 50%;
-    margin: auto;
+
+}
+.product-card {
+    border: 1px solid var(--border-color);
+    padding: 5px;
 }
 
 .product-card__h3:hover {
     color: var(--h2-text-color);
 }
+@media (min-width: 600px) {
+    .main-product__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+}
 
+@media (min-width: 900px) {
+    .main-product__list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
